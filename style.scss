@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
 $Red: hsl(0, 100%, 74%);
-$Green: hsl(154, 59%, 51%);
+$Green: hsl(154, 57%, 44%);
 $Blue: hsl(248, 32%, 49%);
 $Dark-Blue: hsl(249, 10%, 26%); 
 $Grayish-Blue: hsl(246, 25%, 77%);
@@ -7,6 +9,8 @@ $Grayish-Blue: hsl(246, 25%, 77%);
 html, body{
     width: 100%;
     height: 100%;
+    padding: 0;
+    margin: 0;
 
     main{
         width: 100%;
@@ -15,15 +19,88 @@ html, body{
         flex-direction: row;
         background-image: url(images/bg-intro-desktop.png);
         background-color: $Red;
+        color: white;
+        font-family: 'Poppins';
 
-        .trial-form{
-            background-color: white;
-            width: 400px;
-            height: 500px;
+        .info-section{
+            width: 50%;
+            padding: 200px 100px 0px 95px;
 
-            input, button{
-                width: 90%;
+            h1{
+                font-size: 50px;
+                font-weight: 700;
+            }
+
+            p{
+                font-size: 14px;
             }
         }
+
+        .form-section{
+            width: 50%;
+            padding-top: 100px;
+
+            .offer-text{
+                background-color: $Blue;
+                width: 450px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                border-radius: 10px;
+                font-weight: 400;
+                font-size: 12px;
+                box-shadow: 4px 4px 15px 1px #4d4c4c;
+
+                .free-trial{
+                    font-weight: 700;
+                }
+            }
+
+            .trial-form{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: white;
+                width: 450px;
+                height: 400px;
+                gap: 15px;
+                padding-top: 20px;
+                border-radius: 10px;
+                
+
+                input, button{
+                    width: 90%;
+                    height: 45px;
+                    border-radius: 5px;
+                    font-size: 15px;
+                }
+
+                .claim-button{
+                    background-color: $Green;
+                    color: white;
+                    box-shadow: 0px 5px 2px 0px hsl(154, 57%, 39%);
+                }
+
+                input {
+                    border: 1px solid $Grayish-Blue;
+
+                    &::placeholder{
+                        padding-left: 10px;
+                    }
+                }
+
+                .agreement{
+                    color: $Grayish-Blue;
+                    font-weight: 400;
+                    font-size: 11px;
+
+                    .terms{
+                        color: $Red;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+        
     }
 }
