@@ -24,7 +24,7 @@ html, body{
 
         .info-section{
             width: 50%;
-            padding: 200px 100px 0px 95px;
+            padding: 200px 50px 0px 145px;
 
             h1{
                 font-size: 50px;
@@ -39,6 +39,9 @@ html, body{
         .form-section{
             width: 50%;
             padding-top: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
             .offer-text{
                 background-color: $Blue;
@@ -95,9 +98,6 @@ html, body{
 
                 input {
                     border: 1px solid $Grayish-Blue;
-                    background-image: url('images/icon-error.svg');
-                    background-repeat: no-repeat;
-                    background-position: 90% 50%;
 
                     &::placeholder{
                         padding-left: 10px;
@@ -119,6 +119,62 @@ html, body{
                         color: $Red;
                         font-weight: 700;
                     }
+                }
+            }
+        }
+
+        @media (max-width: 1000px) {
+            .info-section{
+                padding: 200px 50px 0px 80px;
+            }
+        }
+
+        @media (max-width: 950px) {
+            flex-direction: column;
+            height: fit-content;
+            text-align: center;
+
+            .info-section{
+                width: 100%;
+                padding: 60px 80px 0px 80px;
+            }
+
+            .form-section{
+                width: 100%;
+                padding-top: 40px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            flex-direction: column;
+            height: fit-content;
+            text-align: center;
+
+            .info-section{
+                width: 100%;
+                padding: 60px 40px 0px 40px;
+
+                h1{
+                    font-size: 40px;
+                    font-weight: 700;
+                }
+    
+                p{
+                    font-size: 14px;
+                }
+            }
+
+            .form-section{
+                width: 100%;
+                padding-top: 40px;
+                padding-bottom: 40px;
+
+                .offer-text{
+                    width: 310px;
+                }
+
+                .trial-form{
+                    width: 310px;
                 }
             }
         }

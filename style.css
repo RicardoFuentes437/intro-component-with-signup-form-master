@@ -17,7 +17,7 @@ html main, body main {
 }
 html main .info-section, body main .info-section {
   width: 50%;
-  padding: 200px 100px 0px 95px;
+  padding: 200px 50px 0px 145px;
 }
 html main .info-section h1, body main .info-section h1 {
   font-size: 50px;
@@ -29,6 +29,9 @@ html main .info-section p, body main .info-section p {
 html main .form-section, body main .form-section {
   width: 50%;
   padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 html main .form-section .offer-text, body main .form-section .offer-text {
   background-color: hsl(248deg, 32%, 49%);
@@ -78,9 +81,6 @@ html main .form-section .trial-form .claim-button:hover, body main .form-section
 }
 html main .form-section .trial-form input, body main .form-section .trial-form input {
   border: 1px solid hsl(246deg, 25%, 77%);
-  background-image: url("images/icon-error.svg");
-  background-repeat: no-repeat;
-  background-position: 90% 50%;
 }
 html main .form-section .trial-form input::-moz-placeholder, body main .form-section .trial-form input::-moz-placeholder {
   padding-left: 10px;
@@ -104,4 +104,57 @@ html main .form-section .trial-form .agreement, body main .form-section .trial-f
 html main .form-section .trial-form .agreement .terms, body main .form-section .trial-form .agreement .terms {
   color: hsl(0deg, 100%, 74%);
   font-weight: 700;
+}
+@media (max-width: 1000px) {
+  html main .info-section, body main .info-section {
+    padding: 200px 50px 0px 80px;
+  }
+}
+@media (max-width: 950px) {
+  html main, body main {
+    flex-direction: column;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    text-align: center;
+  }
+  html main .info-section, body main .info-section {
+    width: 100%;
+    padding: 60px 80px 0px 80px;
+  }
+  html main .form-section, body main .form-section {
+    width: 100%;
+    padding-top: 40px;
+  }
+}
+@media (max-width: 500px) {
+  html main, body main {
+    flex-direction: column;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    text-align: center;
+  }
+  html main .info-section, body main .info-section {
+    width: 100%;
+    padding: 60px 40px 0px 40px;
+  }
+  html main .info-section h1, body main .info-section h1 {
+    font-size: 40px;
+    font-weight: 700;
+  }
+  html main .info-section p, body main .info-section p {
+    font-size: 14px;
+  }
+  html main .form-section, body main .form-section {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  html main .form-section .offer-text, body main .form-section .offer-text {
+    width: 310px;
+  }
+  html main .form-section .trial-form, body main .form-section .trial-form {
+    width: 310px;
+  }
 }/*# sourceMappingURL=style.css.map */
