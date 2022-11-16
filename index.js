@@ -22,6 +22,9 @@ form.addEventListener('submit', function(event){
         firstInput.style.backgroundImage = "url('images/icon-error.svg')";
         firstInput.style.backgroundRepeat = "no-repeat";
         firstInput.style.backgroundPosition = "90% 50%";
+    }else{
+        fnMessage.style.opacity = 0;
+        firstInput.style.backgroundImage = 'none';
     }
 
     if(!lnInput){
@@ -29,6 +32,9 @@ form.addEventListener('submit', function(event){
         lastInput.style.backgroundImage = "url('images/icon-error.svg')";
         lastInput.style.backgroundRepeat = "no-repeat";
         lastInput.style.backgroundPosition = "90% 50%";
+    }else{
+        lnMessage.style.opacity = 0;
+        lastInput.style.backgroundImage = 'none';
     }
 
     if(regex.test(eInput) == false || !eInput){
@@ -36,6 +42,9 @@ form.addEventListener('submit', function(event){
         emailInput.style.backgroundImage = "url('images/icon-error.svg')";
         emailInput.style.backgroundRepeat = "no-repeat";
         emailInput.style.backgroundPosition = "90% 50%";
+    }else{
+        eMessage.style.opacity = 0;
+        emailInput.style.backgroundImage = 'none';
     }
 
     if(!pInput){
@@ -43,6 +52,9 @@ form.addEventListener('submit', function(event){
         passInput.style.backgroundImage = "url('images/icon-error.svg')";
         passInput.style.backgroundRepeat = "no-repeat";
         passInput.style.backgroundPosition = "90% 50%";
+    }else{
+        pMessage.style.opacity = 0;
+        passInput.style.backgroundImage = 'none';
     }
 
     if((fnInput.length > 0) && (lnInput.length > 0) && (eInput.length > 0 && regex.test(eInput) != false) && (pInput.length > 0)){

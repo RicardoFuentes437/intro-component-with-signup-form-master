@@ -125,6 +125,7 @@ html main .form-section .trial-form .agreement .terms, body main .form-section .
   html main .form-section, body main .form-section {
     width: 100%;
     padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 @media (max-width: 500px) {
