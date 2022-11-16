@@ -150,6 +150,7 @@ html, body{
             flex-direction: column;
             height: fit-content;
             text-align: center;
+            background-image: url(images/bg-intro-mobile.png);
 
             .info-section{
                 width: 100%;
@@ -176,6 +177,10 @@ html, body{
 
                 .trial-form{
                     width: 310px;
+
+                    .agreement{
+                        padding: 15px 10px 0px 10px;
+                    }
                 }
             }
         }

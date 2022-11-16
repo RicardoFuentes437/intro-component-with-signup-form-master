@@ -135,6 +135,7 @@ html main .form-section .trial-form .agreement .terms, body main .form-section .
     height: -moz-fit-content;
     height: fit-content;
     text-align: center;
+    background-image: url(images/bg-intro-mobile.png);
   }
   html main .info-section, body main .info-section {
     width: 100%;
@@ -157,5 +158,8 @@ html main .form-section .trial-form .agreement .terms, body main .form-section .
   }
   html main .form-section .trial-form, body main .form-section .trial-form {
     width: 310px;
+  }
+  html main .form-section .trial-form .agreement, body main .form-section .trial-form .agreement {
+    padding: 15px 10px 0px 10px;
   }
 }/*# sourceMappingURL=style.css.map */
